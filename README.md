@@ -13,10 +13,10 @@ git clone https://github.com/rifqiabd/base64extract.git
 ## How To Use
 
 copy your curl from download all on devtool like image below
-[!images](images/ss1.png)
+![Screenshot 1](images/ss1.png)
 
 create file curl.txt on your directory and put copied curl on it
-[!images](images/ss1.png)
+![Screenshot 2](images/ss1.png)
 
-after that you can use ```php dump.php``` to extract base64 to separate file
-and use ```php decode.php``` to convert base64 to jpeg file.
+after that you can use ```php dump.php``` to extract base64 to separate file on base folder
+and use ```php decode.php``` to convert base64 to jpeg file and put it on decode folder.
