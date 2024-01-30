@@ -18,5 +18,4 @@ copy your curl from download all on devtool like image below
 create file curl.txt on your directory and put copied curl on it
 ![Screenshot 2](images/ss2.png)
 
-after that you can use ```php dump.php``` to extract base64 to separate file on base folder
-and use ```php decode.php``` to convert base64 to jpeg file and put it on decode folder.
+after to extract base64 as separate file, you can use ```php dump.php``` that will put base64 file to "base" folder. And use ```php decode.php``` to convert base64 to jpeg file then you can look the result on "decode" folder.
