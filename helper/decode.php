@@ -1,7 +1,7 @@
 <?php
 
 // Set the directory path
-$dir = "base";
+$dir = "../public/output";
 
 // Get all the files in the directory
 $files = scandir($dir);
@@ -22,7 +22,7 @@ foreach ($files as $file) {
         $ext = pathinfo($file, PATHINFO_EXTENSION);
 
         // Save the image
-        file_put_contents("decode/" . $file . ".jpeg", $img);
+        file_put_contents("../public/decode/". $file . ".jpeg", $img);
     }
 }
 

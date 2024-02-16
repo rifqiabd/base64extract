@@ -1,4 +1,8 @@
 <?php
+//path dari filenya
+$file_path="../public/upload/";
+
+
 // Fungsi untuk memisahkan curl yang memiliki base64 dan menyimpannya ke dalam file terpisah
 function extract_base64_curls($file_path)
 {
