@@ -1,7 +1,7 @@
 <?php
 
 // Set the directory path
-$dir = "../public/output";
+$dir = "./public/output/";
 
 // Get all the files in the directory
 $files = scandir($dir);
@@ -10,10 +10,10 @@ $files = scandir($dir);
 foreach ($files as $file) {
 
     // Check if the file is a .txt file
-    if (pathinfo($file, PATHINFO_EXTENSION) == "txt") {
+    if (pathinfo($file, PATHINFO_EXTENSION) == "cmd") {
 
         // Get the contents of the file
-        $contents = file_get_contents($dir . "/" . $file);
+        $contents = file_get_contents($dir . $file);
 
         // Decode the image string
         $img = base64_decode($contents);
@@ -22,8 +22,8 @@ foreach ($files as $file) {
         $ext = pathinfo($file, PATHINFO_EXTENSION);
 
         // Save the image
-        file_put_contents("../public/decode/". $file . ".jpeg", $img);
+        file_put_contents("./public/decode/". $file . ".jpeg", $img);
     }
 }
 
-echo "Done!";
+echo "Done!" . PHP_EOL;

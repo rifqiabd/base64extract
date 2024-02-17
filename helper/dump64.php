@@ -1,7 +1,5 @@
 <?php
 //path dari filenya
-$file_path="../public/upload/";
-
 
 // Fungsi untuk memisahkan curl yang memiliki base64 dan menyimpannya ke dalam file terpisah
 function extract_base64_curls($file_path)
@@ -14,7 +12,7 @@ function extract_base64_curls($file_path)
             $base64_curl_count++;
             $curl = substr($curl, 28);
             $curl = substr($curl, 0, -4);
-            $file_name = "base/image_" . $base64_curl_count;
+            $file_name = "./public/output/base_" . $base64_curl_count . ".cmd";
             file_put_contents($file_name, $curl);
         }
     }
@@ -23,4 +21,4 @@ function extract_base64_curls($file_path)
 }
 
 // Contoh penggunaan fungsi
-extract_base64_curls("curl.txt");
+extract_base64_curls("./public/upload/curl.cmd");
